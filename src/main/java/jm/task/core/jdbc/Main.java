@@ -26,6 +26,8 @@ public class Main {
         us.getAllUsers().stream().forEach(System.out::println);
         us.dropUsersTable();
 
-        Util.close();
+//        Util.closeConnection();
+        Util.closeSessionFactory();
+
     }
 }
