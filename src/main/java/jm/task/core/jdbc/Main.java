@@ -19,11 +19,11 @@ public class Main {
         us.saveUser("Bobby", "Firmino", (byte) 31);
         us.saveUser("Alisson", "Becker", (byte) 30);
         us.saveUser("Darwin", "Nunez", (byte) 23);
-        us.getAllUsers().stream().forEach(System.out::println);
+        us.getAllUsers().forEach(System.out::println);
         us.removeUserById(4);
-        us.getAllUsers().stream().forEach(System.out::println);
+        us.getAllUsers().forEach(System.out::println);
         us.cleanUsersTable();
-        us.getAllUsers().stream().forEach(System.out::println);
+        us.getAllUsers().forEach(System.out::println);
         us.dropUsersTable();
 
 //        Util.closeConnection();
